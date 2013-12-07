@@ -6,7 +6,7 @@
 # catalog-version 5.06
 Name:		texlive-xymtex
 Version:	5.06
-Release:	3
+Release:	4
 Summary:	Typesetting chemical structures
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/xymtex
