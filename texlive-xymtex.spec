@@ -1,19 +1,13 @@
-# revision 32182
-# category Package
-# catalog-ctan /macros/latex/contrib/xymtex
-# catalog-date 2013-10-31 09:17:33 +0100
-# catalog-license lppl1.3
-# catalog-version 5.06
 Name:		texlive-xymtex
-Version:	5.06
-Release:	10
+Version:	32182
+Release:	1
 Summary:	Typesetting chemical structures
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/xymtex
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xymtex.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xymtex.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xymtex.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xymtex.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xymtex.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xymtex.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -32,12 +26,12 @@ design allows XyMTeX to operate as a practical (device-
 independent) tool for use with LaTeX.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -159,7 +153,8 @@ independent) tool for use with LaTeX.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
