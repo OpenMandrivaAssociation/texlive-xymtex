@@ -1,6 +1,6 @@
 Name:		texlive-xymtex
 Version:	32182
-Release:	1
+Release:	2
 Summary:	Typesetting chemical structures
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/xymtex
