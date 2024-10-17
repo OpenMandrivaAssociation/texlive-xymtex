@@ -3,7 +3,7 @@ Version:	32182
 Release:	2
 Summary:	Typesetting chemical structures
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/xymtex
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/xymtex
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xymtex.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xymtex.doc.r%{version}.tar.xz
